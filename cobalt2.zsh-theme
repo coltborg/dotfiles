@@ -1,38 +1,16 @@
-# vim:ft=zsh ts=2 sw=2 sts=2
 #
-# agnoster's Theme - https://gist.github.com/3712874
-# A Powerline-inspired theme for ZSH
+# Cobalt2 Theme - https://github.com/wesbos/Cobalt2-iterm
 #
 # # README
 #
 # In order for this theme to render correctly, you will need a
 # [Powerline-patched font](https://gist.github.com/1595572).
-#
-# In addition, I recommend the
-# [Solarized theme](https://github.com/altercation/solarized/) and, if you're
-# using it on Mac OS X, [iTerm 2](http://www.iterm2.com/) over Terminal.app -
-# it has significantly better color fidelity.
-#
-# # Goals
-#
-# The aim of this theme is to only show you *relevant* information. Like most
-# prompts, it will only show git information when in a git working directory.
-# However, it goes a step further: everything from the current user and
-# hostname to whether the last call exited with an error to whether background
-# jobs are running in this shell will all be displayed automatically when
-# appropriate.
-
+##
 ### Segment drawing
 # A few utility functions to make it easy and re-usable to draw segmented prompts
 
 CURRENT_BG='NONE'
-SEGMENT_SEPARATOR=''
-
-## huh dont need this
-collapse_pwd() {
-   # echo $(pwd | sed -e "s,^$HOME,~,")
-   echo $(pwd | sed -e "s,^$HOME,~," | sed "s@\(.\)[^/]*/@\1/@g")
-}
+SEGMENT_SEPARATOR=''
 
 # Begin a segment
 # Takes two arguments, background and foreground. Both can be omitted,
@@ -44,11 +22,11 @@ prompt_segment() {
   if [[ $CURRENT_BG != 'NONE' && $1 != $CURRENT_BG ]]; then
     echo -n " %{$bg%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR%{$fg%} "
   else
-    echo -n "%{$fg%} "
+    echo -n "%{$bg%}%{$fg%} "
     # echo $(pwd | sed -e "s,^$HOME,~," | sed "s@\(.\)[^/]*/@\1/@g")
     # echo $(pwd | sed -e "s,^$HOME,~,")
   fi
-  CURRENT_BG='NONE'
+  CURRENT_BG=$1
   [[ -n $3 ]] && echo -n $3
 }
 
@@ -83,9 +61,9 @@ prompt_git() {
     dirty=$(parse_git_dirty)
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git show-ref --head -s --abbrev |head -n1 2> /dev/null)"
     if [[ -n $dirty ]]; then
-      prompt_segment black yellow
+      prompt_segment yellow black
     else
-      prompt_segment black green
+      prompt_segment green black
     fi
     echo -n "${ref/refs\/heads\// }$dirty"
   fi
@@ -93,8 +71,8 @@ prompt_git() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment black blue '%~'
-  # echo $(pwd | sed -e "s,^$HOME,~," | sed "s@\(.\)[^/]*/@\1/@g")
+  prompt_segment blue black '%3~'
+  # prompt_segment blue black "…${PWD: -30}"
 }
 
 # Status:

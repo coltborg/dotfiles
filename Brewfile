@@ -4,7 +4,6 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
-tap 'homebrew/php'
 
 # Install ZSH
 brew 'zsh'
@@ -20,10 +19,9 @@ brew 'findutils'
 brew 'bash'
 
 # Install more recent versions of some macOS tools
-brew 'homebrew/dupes/grep'
+#brew 'homebrew/dupes/grep'
 
 # Install Binaries
-brew 'awscli'
 brew 'git'
 brew 'hub'
 brew 'tree'
@@ -34,38 +32,34 @@ brew 'trash'
 brew 'wget'
 
 # Development
-brew 'php71'
-brew 'php71-intl'
-brew 'php71-imagick'
-brew 'mariadb'
 
 # Apps
-cask 'aerial'
+cask '1password'
 cask 'alfred'
-cask 'caffeine'
-cask 'docker'
 cask 'firefox'
-cask 'google-backup-and-sync'
+cask 'firefoxdeveloperedition'
+cask 'firefoxnightly'
 cask 'google-chrome'
-cask 'gpgtools'
-cask 'insomnia'
+cask 'google-chrome-canary'
 cask 'iterm2'
-cask 'java'
-cask 'mysqlworkbench'
-cask 'now'
-cask 'phpstorm'
-cask 'quip'
-cask 'sequel-pro'
-cask 'shuttle'
+cask 'imageoptim'
+cask 'karabiner-elements'
+cask 'liteicon'
+cask 'numi'
+cask 'opera'
+cask 'opera-neon'
+cask 'pocket-casts'
 cask 'slack'
-cask 'sublime-text'
-cask 'torbrowser'
-cask 'tower'
-cask 'transmit'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
-cask 'vlc'
+cask 'bartender'
+cask 'dropbox'
+cask 'encryptme'
+cask 'fantastical'
+cask 'skyfonts'
+cask 'sketch'
+cask 'spectacle'
+cask 'spotify'
+cask 'visual-studio-code'
+cask 'visual-studio-code-insiders'
 
 # Quicklook
 cask 'qlcolorcode'
@@ -81,12 +75,8 @@ cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
-mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
-mas 'Deckset', id: 847496013
-mas 'Gapplin', id: 768053424
 mas 'Giphy Capture', id: 668208984
-mas 'Paw', id: 584653203
-mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
-mas 'Tweetbot', id: 557168941
+mas 'Amphetamine', id: 937984704
+mas 'Memory Clean 2 - Monitor and Free Up Memory', id: 1114591412
+mas 'Things 3', id: 904280696
+mas 'Todoist: Organize your life', id: 585829637

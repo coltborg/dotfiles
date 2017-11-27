@@ -1,24 +1,21 @@
 # Shortcuts
 alias copyssh="pbcopy < $HOME/.ssh/id_rsa.pub"
 alias reloadcli="source $HOME/.zshrc"
-alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="$(brew --prefix coreutils)/libexec/gnubin/ls -ahlF --color --group-directories-first"
-alias weather="curl -4 http://wttr.in"
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
+alias ls="ls -GFhal"
+alias gg="git status"
+alias glog="git log --graph --abbrev-commit --decorate -all"
+alias gb="git branch -a"
+alias gba="git branch -a"
+alias gc-="git checkout -"
+alias gfap="git fetch --all --prune"
+alias grp="git remote prune origin"
+alias openzsh="code ~/.zshrc"
+alias yrd="yarn run dev"
+alias yrs="yarn run start"
+alias npmbin="Path=$(npm bin):$PATH"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Sites"
 
-# Laravel
-alias a="php artisan"
-
-# Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"

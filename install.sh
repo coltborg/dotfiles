@@ -14,21 +14,14 @@ brew update
 brew tap homebrew/bundle
 brew bundle
 
+# Install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
 
-# Install Composer
-curl -sS https://getcomposer.org/installer | php
-mv composer.phar /usr/local/bin/composer
-
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/spark-installer laravel/valet tightenco/jigsaw
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
 # Install global NPM packages
-npm install --global yarn now
+npm install --global yarn
 
 # Create a Sites directory
 # This is a default directory for macOS user accounts but doesn't comes pre-installed
