@@ -30,6 +30,7 @@ brew 'mas'
 brew 'node'
 brew 'trash'
 brew 'wget'
+brew 'z'
 
 # Development
 

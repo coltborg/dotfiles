@@ -146,6 +146,9 @@ defaults write com.apple.finder FXInfoPanesExpanded -dict \
 # Auto hide menu bar
 #defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
+# Allow Dropbox applications directory to be used with Alfred
+defaults write com.runningwithcrayons.Alfred-Preferences-3 dropbox.allowappsfolder -bool true
+
 ###############################################################################
 # Dock, Dashboard, and hot corners                                            #
 ###############################################################################
