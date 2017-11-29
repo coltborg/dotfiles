@@ -4,6 +4,7 @@ tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
+tap 'caskroom/fonts'
 
 # Install ZSH
 brew 'zsh'
@@ -31,6 +32,8 @@ brew 'node'
 brew 'trash'
 brew 'wget'
 brew 'z'
+brew 'zsh-autosuggestions'
+brew 'zsh-syntax-highlighting'
 
 # Development
 
@@ -71,9 +74,7 @@ cask 'qlstephen'
 
 # Fonts
 cask 'font-source-code-pro-for-powerline'
-cask 'font-source-code-pro'
-cask 'font-source-sans-pro'
-cask 'font-source-serif-pro'
+cask 'font-fira-mono-for-powerline'
 
 # Install Mac App Store apps
 mas 'Giphy Capture', id: 668208984
