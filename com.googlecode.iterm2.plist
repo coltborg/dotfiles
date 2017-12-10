@@ -373,11 +373,11 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>929 110 445 312 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>72 426 958 451 0 0 1440 877 </string>
+	<string>72 404 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>783 411 650 452 0 0 1440 877 </string>
+	<string>790 424 650 452 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>68 280 570 452 0 0 1440 877 </string>
+	<string>723 2 714 435 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1130,8 +1130,12 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>CAF3BF6E-DB84-4C8C-97F3-BC555CBFB794</string>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>533453423.82378101</real>
+	<key>OnlyWhenMoreTabs</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1178,7 +1182,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-11-29T00:53:59Z</date>
+	<date>2017-12-10T17:45:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>findMode_iTerm</key>
