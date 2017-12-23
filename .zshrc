@@ -82,3 +82,10 @@ export LANG=en_US.UTF-8
 
 # Active zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# rbenv access
+export PATH="$HOME/.rbenv/bin:$PATH"
+
+# rbenv enable shims and autocompletion
+eval "$(rbenv init -)"
+
