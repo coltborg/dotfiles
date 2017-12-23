@@ -13,6 +13,7 @@ alias openzsh="code ~/.zshrc"
 alias yrd="yarn run dev"
 alias yrs="yarn run start"
 alias npmbin="Path=$(npm bin):$PATH"
+alias yarnbin="Path=$(yarn bin):$PATH"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
