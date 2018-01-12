@@ -14,6 +14,8 @@ alias yrd="yarn run dev"
 alias yrs="yarn run start"
 alias npmbin="Path=$(npm bin):$PATH"
 alias yarnbin="Path=$(yarn bin):$PATH"
+alias ios="$ open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app
+"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
