@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="cobalt2"
+ZSH_THEME="spaceship"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -89,3 +89,10 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 # rbenv enable shims and autocompletion
 eval "$(rbenv init -)"
 
+# Spaceship options
+SPACESHIP_CHAR_SYMBOL="▲ "
+
+# Iterm2 dark header
+echo -e "\033]6;1;bg;red;brightness;124\a"
+echo -e "\033]6;1;bg;green;brightness;122\a"
+echo -e "\033]6;1;bg;blue;brightness;125\a"

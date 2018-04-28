@@ -1,0 +1,1 @@
+/Users/colt/.dotfiles/themes/spaceship-prompt/spaceship.zsh-theme
